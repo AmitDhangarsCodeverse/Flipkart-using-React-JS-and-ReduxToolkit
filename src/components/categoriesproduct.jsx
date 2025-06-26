@@ -10,15 +10,27 @@ const CategoriesProduct = () => {
   const { data, err, loading } = useSelector((state) => state.category);
   const { getdetails } = useProductDetails(data);
   const { buyNow } = useBuyNow();
-  const dispatch = useDispatch();  
+  const dispatch = useDispatch();
   useEffect(() => {
     dispatch(FetchCategories(storedValue.id));
   }, [storedValue, dispatch]);
   return (
     <>
       <div className="category-product-wrapper bg-white border border-gray-400 rounded-md shadow-md shadow-gray-400 xs:m-1 xs:p-0.5 sm:m-2 sm:p-1 lg:m-1 xl:m-3">
-        <h1 className="text-center font-semibold xs:m-1">Explore the {storedValue.name} Category</h1>
+        <h1 className="text-center font-semibold xs:m-1">
+          Explore the {storedValue.name} Category
+        </h1>
         <div className="product-container flex flex-wrap justify-evenly">
+          {err && (
+            <p className=" error text-center xs:pb-4 flex justify-center items-center flex-col">
+              <img
+                src="https://cdn-icons-png.freepik.com/512/9474/9474058.png"
+                alt=""
+                className="h-10 xs:h-4 sm:h-5 lg:h-8 xl:h-10"
+              />
+              {err}
+            </p>
+          )}
           {loading && <Loading />}
           {data &&
             data.map((prod) => (

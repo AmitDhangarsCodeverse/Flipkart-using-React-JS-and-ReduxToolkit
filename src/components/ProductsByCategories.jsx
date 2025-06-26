@@ -14,7 +14,9 @@ const ProductsByCategories = () => {
     <>
       <div className="productsbycategories">
         <div className="category-wrapper bg-white xs:rounded-md shadow-md shadow-blue-400 border-2 border-blue-400 xs:m-1 lg:m-1 xl:m-3">
-          <h1 className="font-semibold border-b-2 xs:py-1 mb-1 px-1 mx-1">Clothes</h1>
+          <h1 className="font-semibold border-b-2 xs:py-1 mb-1 px-1 mx-1">
+            Clothes
+          </h1>
           <div className="clothes-category flex justify-evenly items-center flex-wrap xs:m-1 p-1 lg:m-1 xl:m-3">
             {err && (
               <p className=" error text-center xs:pb-4 flex justify-center items-center flex-col">
@@ -33,7 +35,20 @@ const ProductsByCategories = () => {
                   (item) => item.id >= 1 && item.id <= 10
                 );
                 if (finaldata.length === 0 && !err) {
-                  return (<div className="flex flex-col items-center"><img src={"https://assets-v2.lottiefiles.com/a/9c2b07a8-1182-11ee-8416-5301fcba3685/imMRI3sikr.gif"} alt="" className="xs:h-10 md:h-20 lg:h-36"/><p className="unavailable">Sorry,currently products are not available !</p> </div>);
+                  return (
+                    <div className="flex flex-col items-center">
+                      <img
+                        src={
+                          "https://assets-v2.lottiefiles.com/a/9c2b07a8-1182-11ee-8416-5301fcba3685/imMRI3sikr.gif"
+                        }
+                        alt=""
+                        className="cursor-pointer xs:h-10 md:h-20 lg:h-36"
+                      />
+                      <p className="unavailable">
+                        Sorry,currently products are not available !
+                      </p>{" "}
+                    </div>
+                  );
                 } else {
                   return finaldata.map((clothesItem) => (
                     <div
@@ -59,7 +74,9 @@ const ProductsByCategories = () => {
           </div>
         </div>
         <div className="category-wrapper bg-white xs:rounded-md shadow-md shadow-blue-400 border-2 border-blue-400 xs:m-1 lg:m-1 xl:m-3">
-          <h1 className="font-semibold border-b-2 xs:py-1 mb-1 px-1 mx-1">Furniture</h1>
+          <h1 className="font-semibold border-b-2 xs:py-1 mb-1 px-1 mx-1">
+            Furniture
+          </h1>
           <div className="furniture-category flex justify-evenly items-center flex-wrap xs:m-1 lg:m-1 xl:m-3">
             {err && (
               <p className=" error text-center xs:pb-4 flex justify-center items-center flex-col">
@@ -79,7 +96,20 @@ const ProductsByCategories = () => {
                 );
 
                 if (finaldata.length === 0 && !err) {
-                  return (<div className="flex flex-col items-center"><img src={"https://assets-v2.lottiefiles.com/a/9c2b07a8-1182-11ee-8416-5301fcba3685/imMRI3sikr.gif"} alt="" className="xs:h-10 md:h-20 lg:h-36"/><p className="unavailable">Sorry,currently products are not available !</p> </div>);
+                  return (
+                    <div className="flex flex-col items-center">
+                      <img
+                        src={
+                          "https://assets-v2.lottiefiles.com/a/9c2b07a8-1182-11ee-8416-5301fcba3685/imMRI3sikr.gif"
+                        }
+                        alt=""
+                        className="cursor-pointer xs:h-10 md:h-20 lg:h-36"
+                      />
+                      <p className="unavailable">
+                        Sorry,currently products are not available !
+                      </p>{" "}
+                    </div>
+                  );
                 } else {
                   return finaldata.map((furitem) => (
                     <div
@@ -98,14 +128,16 @@ const ProductsByCategories = () => {
                       <p className="product-price font-semibold py-1">
                         Under ₹{furitem.price}
                       </p>
-                    </div>  
+                    </div>
                   ));
                 }
               })()}
           </div>
         </div>
         <div className="category-wrapper bg-white xs:rounded-md shadow-md shadow-blue-400 border-2 border-blue-400 xs:m-1 lg:m-1 xl:m-3">
-          <h1 className="font-semibold border-b-2 xs:py-1 mb-1 px-1 mx-1">Footware</h1>
+          <h1 className="font-semibold border-b-2 xs:py-1 mb-1 px-1 mx-1">
+            Footware
+          </h1>
           <div className="footware-category flex justify-evenly items-center flex-wrap bg-white xs:m-1 lg:m-1 xl:m-3">
             {err && (
               <p className=" error text-center xs:pb-4 flex justify-center items-center flex-col">
@@ -124,7 +156,20 @@ const ProductsByCategories = () => {
                   (item) => item.id >= 35 && item.id <= 40
                 );
                 if (finaldata.length === 0 && !err) {
-                  return (<div className="flex flex-col items-center"><img src={"https://assets-v2.lottiefiles.com/a/9c2b07a8-1182-11ee-8416-5301fcba3685/imMRI3sikr.gif"} alt="" className="xs:h-10 md:h-20 lg:h-36"/><p className="unavailable">Sorry,currently products are not available !</p> </div>);
+                  return (
+                    <div className="flex flex-col items-center">
+                      <img
+                        src={
+                          "https://assets-v2.lottiefiles.com/a/9c2b07a8-1182-11ee-8416-5301fcba3685/imMRI3sikr.gif"
+                        }
+                        alt=""
+                        className="cursor-pointer xs:h-10 md:h-20 lg:h-36"
+                      />
+                      <p className="unavailable">
+                        Sorry,currently products are not available !
+                      </p>{" "}
+                    </div>
+                  );
                 } else {
                   return finaldata.map((footwareItem) => (
                     <div
@@ -150,7 +195,9 @@ const ProductsByCategories = () => {
           </div>
         </div>
         <div className="category-wrapper bg-white xs:rounded-md shadow-md shadow-blue-400 border-2 border-blue-400 xs:m-1 lg:m-1 xl:m-3">
-          <h1 className="font-semibold border-b-2 xs:py-1 mb-1 px-1 mx-1">Miscellaneous</h1>
+          <h1 className="font-semibold border-b-2 xs:py-1 mb-1 px-1 mx-1">
+            Miscellaneous
+          </h1>
           <div className="miscellaneous-category flex justify-evenly items-center flex-wrap bg-white xs:m-1 lg:m-1 xl:m-3">
             {err && (
               <p className=" error text-center xs:pb-4 flex justify-center items-center flex-col">
@@ -165,13 +212,25 @@ const ProductsByCategories = () => {
             {loading && <Loading />}
             {data &&
               (() => {
-                const finaldata =data.filter(
+                const finaldata = data.filter(
                   (item) => item.id >= 41 && item.id <= 50
                 );
-                if(finaldata.length === 0 && !err) {
-                  return (<div className="flex flex-col items-center"><img src={"https://assets-v2.lottiefiles.com/a/9c2b07a8-1182-11ee-8416-5301fcba3685/imMRI3sikr.gif"} alt="" className="xs:h-10 md:h-20 lg:h-36"/><p className="unavailable">Sorry,currently products are not available !</p> </div>);
-                }
-                 else {
+                if (finaldata.length === 0 && !err) {
+                  return (
+                    <div className="flex flex-col items-center">
+                      <img
+                        src={
+                          "https://assets-v2.lottiefiles.com/a/9c2b07a8-1182-11ee-8416-5301fcba3685/imMRI3sikr.gif"
+                        }
+                        alt=""
+                        className="cursor-pointer xs:h-10 md:h-20 lg:h-36"
+                      />
+                      <p className="unavailable">
+                        Sorry,currently products are not available !
+                      </p>{" "}
+                    </div>
+                  );
+                } else {
                   return finaldata.map((miscItem) => (
                     <div
                       key={miscItem.id}
@@ -192,12 +251,13 @@ const ProductsByCategories = () => {
                     </div>
                   ));
                 }
-              })()
-            }
+              })()}
           </div>
         </div>
         <div className="category-wrapper bg-white xs:rounded-md shadow-md shadow-blue-400 border-2 border-blue-400 xs:m-1 lg:m-1 xl:m-3">
-          <h1 className="font-semibold border-b-2 xs:py-1 mb-1 px-1 mx-1">Electronics</h1>
+          <h1 className="font-semibold border-b-2 xs:py-1 mb-1 px-1 mx-1">
+            Electronics
+          </h1>
           <div className="furniture-category flex justify-evenly items-center flex-wrap bg-white xs:m-1 lg:m-1 xl:m-3">
             {err && (
               <p className=" error text-center xs:pb-4 flex justify-center items-center flex-col">
@@ -216,7 +276,20 @@ const ProductsByCategories = () => {
                   (item) => item.id >= 20 && item.id <= 29
                 );
                 if (finaldata.length === 0 && !err) {
-                  return (<div className="flex flex-col items-center"><img src={"https://assets-v2.lottiefiles.com/a/9c2b07a8-1182-11ee-8416-5301fcba3685/imMRI3sikr.gif"} alt="" className="xs:h-10 md:h-20 lg:h-36"/><p className="unavailable">Sorry,currently products are not available !</p> </div>);
+                  return (
+                    <div className="flex flex-col items-center">
+                      <img
+                        src={
+                          "https://assets-v2.lottiefiles.com/a/9c2b07a8-1182-11ee-8416-5301fcba3685/imMRI3sikr.gif"
+                        }
+                        alt=""
+                        className="cursor-pointer xs:h-10 md:h-20 lg:h-36"
+                      />
+                      <p className="unavailable">
+                        Sorry,currently products are not available !
+                      </p>{" "}
+                    </div>
+                  );
                 } else {
                   return finaldata.map((elecItem) => (
                     <div
@@ -238,8 +311,7 @@ const ProductsByCategories = () => {
                     </div>
                   ));
                 }
-              })()
-            }
+              })()}
           </div>
         </div>
       </div>

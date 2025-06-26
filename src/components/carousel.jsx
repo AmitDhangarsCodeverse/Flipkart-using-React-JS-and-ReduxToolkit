@@ -2,15 +2,15 @@ import { useState, useEffect } from "react";
 
 const Carousel = () => {
   const slides = [
-    "https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/68f8c70d05b6bbe1.jpeg?q=60",
+    "https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/b5ab622a8763ca9b.jpeg?q=60",
     "https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/076c4f2ee87225d7.jpg?q=60",
     "https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/5b309e98775e22e4.jpg?q=60",
     "https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/4d9f318f85c4056d.jpg?q=60",
     "https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/2efa811951857f8a.jpeg?q=60",
-    "https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/74f0ad81e44e6e6f.jpg?q=60",
-    "https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/dbd07c8f0d822f95.jpg?q=60",
-    "https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/11980ec333f6aa03.jpg?q=60",
-    "https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/74f0ad81e44e6e6f.jpg?q=60",
+    "https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/3e4ebd51619227b6.jpeg?q=60",
+    "https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/aca69f5455b5df65.jpg?q=60",
+    "https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/c6b40023cdc9c36c.jpg?q=60",
+    "https://rukminim2.flixcart.com/fk-p-flap/3240/540/image/78c3cfa787e8acbe.jpg?q=60",
   ];
 
   const [currentslide, setcurrentslide] = useState(0);

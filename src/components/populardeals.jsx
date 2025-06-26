@@ -16,7 +16,9 @@ const PopularDeals = () => {
   return (
     <>
       <div className="popular-deals bg-white xs:rounded-md shadow-md shadow-blue-400 border-2 border-blue-400 xs:m-1 lg:m-1 xl:m-3">
-        <h1 className="text-start font-semibold border-b-2 xs:py-1 mb-1 px-1 mx-1">For You</h1>
+        <h1 className="text-start font-semibold border-b-2 xs:py-1 mb-1 px-1 mx-1">
+          For You
+        </h1>
         <div className="products-container flex flex-wrap items-center justify-evenly">
           {loading && <Loading />}
           {err && (
@@ -42,7 +44,7 @@ const PopularDeals = () => {
                   className="rounded-sm cursor-pointer xs:h-12 sm:h-16 md:h-24 lg:h-34 xl:h-40"
                 />
                 <p className="product-title p-1">
-                  {prod.title.slice(0,18) + ".."}
+                  {prod.title.slice(0, 18) + ".."}
                 </p>
                 <p className="product-price text-black font-semibold">
                   Under ₹{prod.price}
