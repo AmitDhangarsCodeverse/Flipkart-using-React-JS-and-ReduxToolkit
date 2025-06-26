@@ -6,7 +6,8 @@ A modern e-commerce frontend clone of Flipkart built using **React.js** and **Re
 
 ## 📚 Table of Contents
 
-- [🔍 Overview](#-overview)  
+- [🔍 Overview](#-overview)
+- [ Demo](#-demo)
 - [✨ Features](#-features)  
 - [🛠 Technologies Used](#-technologies-used)  
 - [🚀 Getting Started](#-getting-started)  
@@ -21,6 +22,16 @@ A modern e-commerce frontend clone of Flipkart built using **React.js** and **Re
 This is a simple frontend clone of Flipkart for educational and portfolio purposes. It simulates key e-commerce features like viewing products and managing a cart. The goal is to create a realistic, functional UI using modern frontend tools and patterns.
 
 ---
+## Demo
+![Screenshot 2025-06-26 205533](https://github.com/user-attachments/assets/fe532a26-88e3-45c1-a8b0-64c2bcef8565)
+
+![Screenshot 2025-06-26 205619](https://github.com/user-attachments/assets/45edb881-6bd4-4148-a43a-613d2a09c1d7)
+
+![Screenshot 2025-06-26 205631](https://github.com/user-attachments/assets/c04755e5-b3ed-4be5-a94c-68e08cfb5e74)
+
+
+
+
 
 ## ✨ Features
 
@@ -47,16 +58,19 @@ This is a simple frontend clone of Flipkart for educational and portfolio purpos
 
 Follow these steps to run the project locally:
 
-```bash
+``` bash
 # Clone the repository
-git clone https://github.com/your-username/Flipkart-Using-React-and-ReduxToolkit.git
+git clone https://github.com/AmitDhangarsCodeverse/Flipkart-using-React-JS-and-ReduxToolkit
 cd Flipkart-Using-React-and-ReduxToolkit
+ ```
 
+```bash
 # Install dependencies
 npm install
-
+```
+```bash
 # Start the development server
-npm start
+npm run dev
 ```
 
 ## 🚀 Folder Structure
@@ -76,7 +90,7 @@ src/
 ├── App.jsx           → Main application layout and route definitions
 └── main.jsx          → Application entry point (React DOM rendering)
 ````
-Planned Improvements
+##Planned Improvements
 --------------------
 
 -   API integration for dynamic product data
@@ -91,7 +105,7 @@ Planned Improvements
 
 * * * * *
 
-Author
+##Author
 ------
 
 This project is developed and maintained by:
