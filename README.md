@@ -90,7 +90,7 @@ src/
 ├── App.jsx           → Main application layout and route definitions
 └── main.jsx          → Application entry point (React DOM rendering)
 ````
-##Planned Improvements
+## Planned Improvements
 --------------------
 
 -   API integration for dynamic product data
@@ -105,7 +105,7 @@ src/
 
 * * * * *
 
-##Author
+## Author
 ------
 
 This project is developed and maintained by:
